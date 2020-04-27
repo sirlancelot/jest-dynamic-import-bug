@@ -8,12 +8,13 @@ npm install
 ## Reproduction steps
 
 1. Go through project setup
-2. Run `npm run test:unit`
-3. Note successful run of 2 tests
-4. Run `npm run test:unit -- --watchAll`
-5. Note successful run of 2 tests and watch mode working
-6. Run `npm run test:unit -- --watch`
-7. Note crash with the following error:
+1. In `./tests/unit/dynamic-import.spec.js` delete or comment line 7
+1. Run `npm run test:unit`
+1. Note successful run of 2 tests
+1. Run `npm run test:unit -- --watchAll`
+1. Note successful run of 2 tests and watch mode working
+1. Run `npm run test:unit -- --watch`
+1. Note crash with the following error:
     ```
     Configuration error:
 
